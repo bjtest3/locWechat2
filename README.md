@@ -2,7 +2,7 @@
 全球主机论坛新帖企业微信推送
 最终效果
 
- <img src="https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo1.jpg" alt="Sample"  width="250" height="140">
+ <img src="https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo1.jpg" alt="Sample"  width="140" height="250">
  ![创建应用](https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo2.jpg)
 
 # 介绍
