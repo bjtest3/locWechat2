@@ -20,10 +20,7 @@
 **2、下载以及保存推送新帖脚本**
 
 `下载脚本执行，执行前记得16行修改为你的推送地址`
-```
-#update your push url 
-pushurl='https://wxmsg.youdomain.com/send.php?msg='
-```
+
 <br>
 ```
 
