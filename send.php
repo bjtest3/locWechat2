@@ -1,4 +1,14 @@
 <?php
+//企业id
+$corpid = '';
+
+//应用的Secret
+$corpsecret = '';
+
+////推送的应用id
+$AgentId = '';
+
+
 date_default_timezone_set('PRC');
 //如果不存在文本就禁止提交
 if(!isset($_REQUEST['msg']))
@@ -48,12 +58,12 @@ function https_request($url, $data = null)
  * 开始推送
  */
 //替换你的ACCESS_TOKEN
-$ACCESS_TOKEN = json_decode(https_request("https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=wwe2c394407ca5c471&corpsecret=X-Zj5GXMBsqxcsoyWusE91v1IfrhJgtkRFFC5h2p7JU"),true)["access_token"];
+$ACCESS_TOKEN = json_decode(https_request("https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=".$corpid."&corpsecret=".$corpsecret),true)["access_token"];
 //模板消息请求URL
 $url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=".$ACCESS_TOKEN;
 $MsgArray=array();
 //推送的应用id
-$MsgArray["agentid"]="1000002";
+$MsgArray["agentid"]=$AgentId;
 //标题是可选值
 if(!isset($_REQUEST['title'])){
    $MsgArray["title"]="新提醒";
