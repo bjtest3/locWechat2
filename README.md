@@ -4,7 +4,7 @@
 # 介绍
 自己去申请企业微信，不依赖于第三方服务公共账号
 
-一共三个步骤
+
 ### 1、申请企业微信公共账号
 - 申请一个[微信企业号](https://work.weixin.qq.com/)，名字随意，记住企业ID
 - 然后点击顶部的应用和小程序，，选择创建应用
@@ -21,7 +21,6 @@
 
 **下载脚本执行，执行前记得16行修改为你的推送地址**
 <br>
-**hostloc.com**
 ```
 
 wget https://raw.githubusercontent.com/bjtest3/locWechat2/master/toWechat.py
@@ -31,4 +30,32 @@ pip install js2py
 pip install request
 
 python toWechat.py
+```
+
+### 3、脚本跑十几小时就会挂，用这个脚本守护一下
+```
+vi listen.sh
+chmod +x listen.sh
+```
+<br>
+
+```
+#!/bin/sh
+
+source /etc/profile
+retDesc=`ps -ef | grep "toWechat" | grep -v grep`
+retCode=$?
+if [ ${retCode} -ne 0 ]; 
+    then
+    echo "`date` restart" >> /root/wechatlisten.log 
+    nohup python /root/toWechat.py & 
+else
+    echo "server on"
+fi
+```
+
+**加入到定时任务**
+```
+crontab -e
+*/5 * * * * /root/listen.sh
 ```
