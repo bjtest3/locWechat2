@@ -1,5 +1,8 @@
 # locWechat2
 全球主机论坛新帖企业微信推送
+最终效果
+ ![创建应用](https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo1.jpg)
+ ![创建应用](https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo2.jpg)
 
 # 介绍
 自己去申请企业微信，不依赖于第三方服务公共账号<br>
