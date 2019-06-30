@@ -16,3 +16,19 @@
   分别在代码的6、8、10行修改
 
   企业微信测试推送:http://域名/send.php?msg=测试提交  
+
+### 2、下载以及保存推送新帖脚本
+
+**下载脚本执行，执行前记得16行修改为你的推送地址**
+<br>
+**hostloc.com**
+```
+
+wget https://raw.githubusercontent.com/bjtest3/locWechat2/master/toWechat.py
+
+pip install beautifulsoup4
+pip install js2py
+pip install request
+
+python toWechat.py
+```
