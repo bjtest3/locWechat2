@@ -13,8 +13,7 @@ import re
 #pip install request
 
 #update your userids 
-userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM148v'
-pushurl=''http://wxmsg.youdomain.com/send.php?msg=''
+pushurl='https://wxmsg.youdomain.com/send.php?msg='
 
 
 def getcookies():
