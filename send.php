@@ -1,10 +1,15 @@
 <?php
+
+//这里填入你申请的企业微信信息
+
 //企业id
 $corpid = '';
 //应用的Secret
 $corpsecret = '';
-////推送的应用id
+//推送的应用id
 $AgentId = '';
+
+
 date_default_timezone_set('PRC');
 //如果不存在文本就禁止提交
 if(!isset($_REQUEST['msg']))
