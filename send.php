@@ -1,14 +1,10 @@
 <?php
 //企业id
 $corpid = '';
-
 //应用的Secret
 $corpsecret = '';
-
 ////推送的应用id
 $AgentId = '';
-
-
 date_default_timezone_set('PRC');
 //如果不存在文本就禁止提交
 if(!isset($_REQUEST['msg']))
@@ -66,7 +62,7 @@ $MsgArray=array();
 $MsgArray["agentid"]=$AgentId;
 //标题是可选值
 if(!isset($_REQUEST['title'])){
-   $MsgArray["title"]="新提醒";
+   $MsgArray["title"]="hostloc新帖提醒";
 }
 else{
    $MsgArray["title"]=$_REQUEST['title'];
