@@ -3,7 +3,8 @@
 最终效果
 
  <img src="https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo1.jpg" alt="Sample"  width="380" height="600">
- ![创建应用](https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo2.jpg)
+ <img src="https://github.com/bjtest3/locWechat2/blob/master/image/xiaoguo2.jpg" alt="Sample"  width="380" height="600">
+
 
 # 介绍
 自己去申请企业微信，不依赖于第三方服务公共账号<br>
