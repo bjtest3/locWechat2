@@ -3,7 +3,7 @@
 
 # 介绍
 自己去申请企业微信，不依赖于第三方服务公共账号<br>
-微信企业号参考 https://github.com/kaixin1995/InformationPush
+微信企业号参考了这个大佬文章 https://github.com/kaixin1995/InformationPush
 
 **1、申请企业微信公共账号**
 - 申请一个[微信企业号](https://work.weixin.qq.com/)，名字随意，记住企业ID
