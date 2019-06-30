@@ -8,7 +8,7 @@
 **1、申请企业微信公共账号**
 - 申请一个[微信企业号](https://work.weixin.qq.com/)，名字随意，记住企业ID
 - 然后点击顶部的应用和小程序，，选择创建应用
-  ## 创建应用  
+  **创建应用**  
   ![创建应用](https://github.com/kaixin1995/InformationPush/blob/master/image/%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8.png)  
 - 创建应用后，记住AgentId和Secret
   ![创建应用](https://github.com/kaixin1995/InformationPush/blob/master/image/%E5%BA%94%E7%94%A8id%E8%AE%B0%E5%BD%95.png)
@@ -32,7 +32,7 @@ pip install request
 python toWechat.py
 ```
 
-**3、脚本跑十几小时就会挂，用这个脚本守护一下**
+**3、应对特殊意外，用这个脚本守护一下**
 ```
 vi listen.sh
 chmod +x listen.sh
