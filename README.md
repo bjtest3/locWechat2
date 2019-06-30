@@ -21,7 +21,7 @@
 
 `下载脚本执行，执行前记得16行修改为你的推送地址`
 
-
+![创建应用](https://github.com/bjtest3/locWechat2/blob/master/image/%E5%BA%94%E7%94%A8id%E8%AE%B0%E5%BD%95.png)
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat2/master/toWechat.py
 
