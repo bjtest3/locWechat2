@@ -33,7 +33,7 @@ def getcookies():
     getcookie_script=re.findall("<script>(.*?)</script>",getcookie)
     js.execute(getcookie_script[0].split("document")[0])
     data=js.toHex(js.slowAES.decrypt(js.c, 2, js.a, js.b))
-    cookie="L7FW="+data 
+    cookie="L7DFW="+data 
     print cookie 
     return cookie
 
@@ -46,7 +46,7 @@ def getnewesttitle():
     s.keep_alive = False
     
     
-    result = 'L7FW' in cookiestr
+    result = 'L7DFW' in cookiestr
     print result
     if (result):
         print 'hostloc start AES Decrypt ... '
